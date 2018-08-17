@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gerenciar_produto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.gustavo.firebaseapp.activity.GerenciarProdutoActivity">
+
+    <TextView
+        android:id="@+id/tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dados do produto:"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/txtDescri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tx1"/>
+
+    <EditText
+        android:id="@+id/cpGeDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição"
+        android:theme="@style/textoCixa"
+        android:layout_below="@+id/txtDescri"/>
+
+    <TextView
+        android:id="@+id/txtCor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cor:"
+        android:textSize="16dp"
+        android:layout_below="@+id/cpGeDescricao"/>
+
+    <EditText
+        android:id="@+id/cpGeCor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cor"
+        android:theme="@style/textoCixa"
+        android:layout_below="@+id/txtCor"/>
+
+    <TextView
+        android:id="@+id/txtFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fabricante:"
+        android:textSize="16dp"
+        android:layout_below="@+id/cpGeCor"/>
+
+    <EditText
+        android:id="@+id/cpGeFabricante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fabricante"
+        android:layout_below="@+id/txtFab"
+        android:theme="@style/textoCixa"/>
+
+    <Button
+        android:id="@+id/btnGeSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_below="@+id/cpGeFabricante"
+        android:theme="@style/botaoPadrao"/>
+
+    <Button
+        android:id="@+id/btnGeExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpGeFabricante"
+        android:text="Excluir"
+        android:layout_alignParentRight="true"
+        android:theme="@style/botaoPadrao"/>
+
+</RelativeLayout>
